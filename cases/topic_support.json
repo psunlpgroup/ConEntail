@@ -1,0 +1,79 @@
+{"in": "null", "out": ["World"], "task_name": "ag_news"}
+{"in": "null", "out": ["Sci/Tech"], "task_name": "ag_news"}
+{"in": "null", "out": ["Business"], "task_name": "ag_news"}
+{"in": "null", "out": ["Animal"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["Film"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["Athlete"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["Company"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["Plant"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["Village"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["MeanOfTransportation"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["Artist"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["EducationalInstitution"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["OfficeHolder"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["Building"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["WrittenWork"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["Album"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["NaturalPlace"], "task_name": "dbpedia_14"}
+{"in": "null", "out": ["NUM"], "task_name": "trec"}
+{"in": "null", "out": ["DESC"], "task_name": "trec"}
+{"in": "null", "out": ["ENTY"], "task_name": "trec"}
+{"in": "null", "out": ["HUM"], "task_name": "trec"}
+{"in": "null", "out": ["LOC"], "task_name": "trec"}
+{"in": "null", "out": ["ABBR"], "task_name": "trec"}
+{"in": "null", "out": ["count"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["reason"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["other"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["ind"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["abb"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["manner"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["title"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["gr"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["event"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["product"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["cremat"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["date"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["speed"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["city"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["religion"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["animal"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["termeq"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["def"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["country"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["period"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["instru"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["desc"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["dismed"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["veh"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["exp"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["perc"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["substance"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["state"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["dist"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["money"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["symbol"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["food"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["color"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["mount"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["plant"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["word"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["volsize"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["lang"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["techmeth"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["sport"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["ord"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["body"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["weight"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["temp"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["currency"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["code"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["letter"], "task_name": "trec-finegrained"}
+{"in": "null", "out": ["Science & Mathematics"], "task_name": "yahoo_answers_topics"}
+{"in": "null", "out": ["Education & Reference"], "task_name": "yahoo_answers_topics"}
+{"in": "null", "out": ["Family & Relationships"], "task_name": "yahoo_answers_topics"}
+{"in": "null", "out": ["Society & Culture"], "task_name": "yahoo_answers_topics"}
+{"in": "null", "out": ["Politics & Government"], "task_name": "yahoo_answers_topics"}
+{"in": "null", "out": ["Entertainment & Music"], "task_name": "yahoo_answers_topics"}
+{"in": "null", "out": ["Health"], "task_name": "yahoo_answers_topics"}
+{"in": "null", "out": ["Business & Finance"], "task_name": "yahoo_answers_topics"}
+{"in": "null", "out": ["Computers & Internet"], "task_name": "yahoo_answers_topics"}

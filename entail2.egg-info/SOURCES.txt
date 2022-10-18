@@ -1,0 +1,11 @@
+README.md
+setup.py
+entail2.egg-info/PKG-INFO
+entail2.egg-info/SOURCES.txt
+entail2.egg-info/dependency_links.txt
+entail2.egg-info/top_level.txt
+tests/__init__.py
+tests/data_loader_test.py
+tests/model_test.py
+tests/runner_test.py
+tests/textprocessing_test.py

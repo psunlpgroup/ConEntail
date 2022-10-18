@@ -1,0 +1,34 @@
+{"in": "null", "out": ["happy"], "task_name": "emo"}
+{"in": "null", "out": ["angry"], "task_name": "emo"}
+{"in": "null", "out": ["sad"], "task_name": "emo"}
+{"in": "null", "out": ["sadness"], "task_name": "emotion"}
+{"in": "null", "out": ["surprise"], "task_name": "emotion"}
+{"in": "null", "out": ["joy"], "task_name": "emotion"}
+{"in": "null", "out": ["anger"], "task_name": "emotion"}
+{"in": "null", "out": ["fear"], "task_name": "emotion"}
+{"in": "null", "out": ["love"], "task_name": "emotion"}
+{"in": "null", "out": ["negative"], "task_name": "financial_phrasebank"}
+{"in": "null", "out": ["positive"], "task_name": "financial_phrasebank"}
+{"in": "null", "out": ["neutral"], "task_name": "financial_phrasebank"}
+{"in": "null", "out": ["noHate"], "task_name": "hate_speech18"}
+{"in": "null", "out": ["hate"], "task_name": "hate_speech18"}
+{"in": "null", "out": ["neither"], "task_name": "hate_speech_offensive"}
+{"in": "null", "out": ["offensive language"], "task_name": "hate_speech_offensive"}
+{"in": "null", "out": ["hate speech"], "task_name": "hate_speech_offensive"}
+{"in": "null", "out": ["offensive"], "task_name": "hatexplain"}
+{"in": "null", "out": ["normal"], "task_name": "hatexplain"}
+{"in": "null", "out": ["hatespeech"], "task_name": "hatexplain"}
+{"in": "null", "out": ["negative"], "task_name": "imdb"}
+{"in": "null", "out": ["positive"], "task_name": "imdb"}
+{"in": "null", "out": ["SUPPORTS"], "task_name": "kilt_fever"}
+{"in": "null", "out": ["REFUTES"], "task_name": "kilt_fever"}
+{"in": "null", "out": ["anger"], "task_name": "tweet_eval-emotion"}
+{"in": "null", "out": ["optimism"], "task_name": "tweet_eval-emotion"}
+{"in": "null", "out": ["joy"], "task_name": "tweet_eval-emotion"}
+{"in": "null", "out": ["sadness"], "task_name": "tweet_eval-emotion"}
+{"in": "null", "out": ["hate"], "task_name": "tweet_eval-hate"}
+{"in": "null", "out": ["non-hate"], "task_name": "tweet_eval-hate"}
+{"in": "null", "out": ["hate"], "task_name": "tweet_eval-irony"}
+{"in": "null", "out": ["non-irony"], "task_name": "tweet_eval-irony"}
+{"in": "null", "out": ["hate"], "task_name": "tweet_eval-offensive"}
+{"in": "null", "out": ["non-offensive"], "task_name": "tweet_eval-offensive"}

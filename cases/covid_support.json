@@ -1,0 +1,13 @@
+{"in": "null", "out": ["positive"], "task_name": "covid sentiment"}
+{"in": "null", "out": ["mild"], "task_name": "covid sentiment"}
+{"in": "null", "out": ["negative"], "task_name": "covid sentiment"}
+{"in": "null", "out": ["offensive"], "task_name": "covid sentiment"}
+{"in": "null", "out": ["happy"], "task_name": "covid sentiment"}
+{"in": "null", "out": ["anger"], "task_name": "covid sentiment"}
+{"in": "null", "out": ["sad"], "task_name": "covid sentiment"}
+{"in": "null", "out": ["hate"], "task_name": "covid sentiment"}
+{"in": "null", "out": ["irony"], "task_name": "covid sentiment"}
+{"in": "null", "out": ["non-offensive"], "task_name": "covid sentiment"}
+{"in": "null", "out": ["non-irony"], "task_name": "covid sentiment"}
+{"in": "null", "out": ["non-hate"], "task_name": "covid sentiment"}
+{"in": "null", "out": ["optimism"], "task_name": "covid sentiment"}
