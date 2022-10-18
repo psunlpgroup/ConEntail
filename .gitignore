@@ -1,4 +1,7 @@
 .my_git
+.vscode
+entail2.egg-info
+raw_data
 data_proc
 DNC
 wsd_data
