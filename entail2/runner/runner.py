@@ -438,48 +438,6 @@ class Runner(nn.Module):
         }
         return result
 
-    def submmit_fewrel_all(self, ckpt):
-
-        os.system("cd %s" % self.out_dir)
-        os.system("rm -rf *.json")
-        os.system("rm -rf *.zip")
-        os.system("cd ..")
-
-        self.encoder = self.load_state_dict(torch.load(ckpt)["state_dict"])
-        model = Entail2_Test(self.encoder)
-        model = model.cuda()
-        model.eval()
-        print("load trained model successfully.")
-
-        self.submmit_fewrel(model, kway=5, shot=1, name="test_wiki_input-5-1-0.15.json")
-        self.submmit_fewrel(model, kway=5, shot=5, name="test_wiki_input-5-5-0.15.json")
-        self.submmit_fewrel(model, kway=5, shot=1, name="test_wiki_input-5-1-0.5.json")
-        self.submmit_fewrel(model, kway=5, shot=5, name="test_wiki_input-5-5-0.5.json")
-
-        os.system("cd %s" % self.out_dir)
-        os.system("zip result.zip *")
-        os.system("cd ..")
-
-    def submmit_fewrel(self, model, kway, shot, name):
-        result = []
-        test_loader, _ = fewrel_submmit(batch_sz=1, name=name)
-        with torch.no_grad():
-            pbar = tqdm(enumerate(test_loader), total=len(test_loader))
-            for batch_idx, batch in pbar:
-                for k in batch:
-                    batch[k] = batch[k].cuda()
-                sim = model(**batch)["sim"]
-                sim = sim.view(kway, shot)
-                sim = sim.mean(1)
-                max_sim, pred = sim.max(dim=0)
-                if max_sim > self.thr:
-                    pass
-                else:
-                    pred = torch.tensor(-1)
-                result.append(pred.item())
-        name = "-".join(name.split("-")[1:])
-        json.dump(result, open(os.path.join(self.out_dir, "pred-" + name), "w"))
-
     def load_state_dict(self, state_dict):
         self.encoder.load_state_dict(state_dict)
         return self.encoder

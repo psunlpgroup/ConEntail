@@ -2,9 +2,11 @@
 # ConEntail
 Source code for [ConEntail: An Entailment-based Framework for Universal Zero and Few Shot Classification with Supervised Contrastive Pretraining](https://arxiv.org/pdf/2210.07587.pdf)
 
-## Crossfit Data
+## Supervised Pretraining Data
 
-You need to install [crossfit](https://github.com/INK-USC/CrossFit) env to download the datasets first.
+You can either download our preprocessed supervised pretrained data (128 examples per label) [Google_Drive](https://drive.google.com/file/d/11Si6nVjE5_E32kbb_qLuXS96fccuoO15/view?usp=sharing). You don't have to install CrossFit env if you download the data. 
+
+How to build your own customized data: You need to install [crossfit](https://github.com/INK-USC/CrossFit) env:
 
 CrossFit Environment
 
@@ -29,7 +31,7 @@ bash zero_para_download.sh
 python entail2/dataloader/gym2entail_multitask.py 
 ```
 
-## Environment
+## ConEntail Environment
 
 ```bash
 conda create -n entail2 python=3.6.9
