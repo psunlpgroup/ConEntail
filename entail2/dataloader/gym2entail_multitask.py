@@ -29,7 +29,7 @@ from entail2.common.datastructure import QCH, Sentence, CH_Label, QCH_sampler
 from collections import defaultdict
 
 RAWROOT = "raw_data/gym"
-TRAIN = os.path.join(RAWROOT, "train-multi-ufsl_tasks.json")
+TRAIN = os.path.join(RAWROOT, "train-multi-ufsl_tasks-128.json")
 DEV = os.path.join(RAWROOT, "dev-multi-ufsl_tasks.json")
 TEST = os.path.join(RAWROOT, "test-multi-ufsl_tasks.json")
 
@@ -41,11 +41,14 @@ def get_label_dic():
         return json.load(open(LABEL_DIC, "r"))
     else:
         label_dic = defaultdict(set)
-        with open(TRAIN, "r") as f_train, open(DEV, "r") as f_dev, open(
-            TEST, "r"
-        ) as f_test:
+        # with open(TRAIN, "r") as f_train, open(DEV, "r") as f_dev, open(
+        #     TEST, "r"
+        # ) as f_test:
 
-            for row in chain(f_train, f_dev, f_test):
+        #     for row in chain(f_train, f_dev, f_test):
+        with open(TRAIN, "r") as f_train:
+
+            for row in chain(f_train):
                 row = json.loads(row)
                 label_dic[row["task_name"]].add(row["out"])
         label_dic = {k: list(v) for k, v in label_dic.items()}
@@ -298,6 +301,7 @@ def main():
         "--custom_tasks_splits", type=str, default="entail2/dataloader/ufsl_tasks.json"
     )
     parser.add_argument("--output_dir", default="logs", type=str)
+    # parser.add_argument("--train_dir", default="raw_data/gym")
     parser.add_argument("--train_dir", default="raw_data/gym")
     parser.add_argument("--do_train", action="store_true")
     # parser.add_argument("--model", default="bert-base-uncased", required=False)

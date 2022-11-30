@@ -1,4 +1,4 @@
-TASKS=(glue-cola glue-qqp glue-sst2 glue-mrpc scitail amazon_polarity ag_news rotten_tomatoes hate_speech_offensive imdb)
+TASKS=(glue-cola glue-qqp glue-sst2 glue-mrpc scitail amazon_polarity ag_news rotten_tomatoes hate_speech_offensive)
 for TASK in ${TASKS[@]};
 do
     python scripts/gen_singletask_test.py \

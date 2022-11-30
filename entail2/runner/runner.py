@@ -184,7 +184,8 @@ class Runner(nn.Module):
             #     self.ckpt,
             # )
             torch.save(
-                self.model, self.ckpt,
+                self.model,
+                self.ckpt,
             )
             # if global_step >= self.total_steps:
             #     break

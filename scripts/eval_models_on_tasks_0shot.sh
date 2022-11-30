@@ -7,12 +7,11 @@
 TASKS=(hate_speech_offensive)
 # TASKS=(glue-mrpc glue-qqp amazon_polarity hate_speech_offensive)
 # TASKS=(glue-cola glue-qqp glue-sst2 glue-mrpc scitail amazon_polarity ag_news rotten_tomatoes hate_speech_offensive imdb)
-# MODEL=entail2
-# MODELS=(efl_multichoice efl crossfit unifew)
+MODELS=(entail2)
+# MODELS=(efl_no_cl entail2 crossfit unifew)
 # MODELS=(unifew crossfit)
 # MODELS=(unifew)
-# MODELS=(efl_multichoice)
-MODELS=(efl_no_cl)
+# MODELS=(efl_no_cl)
 # MODELS=(efl)
 
 IDENTIFIER=3

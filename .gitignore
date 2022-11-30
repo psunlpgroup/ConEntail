@@ -1,4 +1,5 @@
 .my_git
+.group_git
 .vscode
 entail2.egg-info
 raw_data

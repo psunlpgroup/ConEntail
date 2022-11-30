@@ -114,7 +114,9 @@ class Pooler(nn.Module):
             "avg",
             "avg_top2",
             "avg_first_last",
-        ], ("unrecognized pooling type %s" % self.pooler_type)
+        ], (
+            "unrecognized pooling type %s" % self.pooler_type
+        )
 
     def forward(self, attention_mask, outputs):
         last_hidden = outputs.last_hidden_state

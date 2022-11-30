@@ -156,7 +156,15 @@ def case_list_to_left_right_label(cases: List[str], begin, end):
     \\belowrulesep=1pt \
 \\begin{tabular}{p{%f\\textwidth} p{%f\\textwidth} p{%f\\textwidth} p{%f\\textwidth} p{%f\\textwidth} p{%f\\textwidth} p{%f\\textwidth}} \
 \\toprule    "
-        % (sent_size, num_size, num_size, num_size, num_size, num_size, num_size,)
+        % (
+            sent_size,
+            num_size,
+            num_size,
+            num_size,
+            num_size,
+            num_size,
+            num_size,
+        )
     )
     tabular += "sentence & " + " & ".join(sentiment_list) + "\\\\"
     for i, case in enumerate(cases):

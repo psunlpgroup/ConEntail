@@ -6,6 +6,12 @@ Source code for [ConEntail: An Entailment-based Framework for Universal Zero and
 
 You can either download our preprocessed supervised pretrained data (128 examples per label) [Google_Drive](https://drive.google.com/file/d/11Si6nVjE5_E32kbb_qLuXS96fccuoO15/view?usp=sharing). You don't have to install CrossFit env if you download the data. 
 
+move the downloaded data to
+```bash
+mkdir raw_data
+mkdir raw_data/gym
+```
+
 How to build your own customized data: You need to install [crossfit](https://github.com/INK-USC/CrossFit) env:
 
 CrossFit Environment
@@ -27,8 +33,6 @@ Download the datasets
 conda activate crossfit
 cd scripts
 bash zero_para_download.sh
-# generate the supervised pretraining dataset
-python entail2/dataloader/gym2entail_multitask.py 
 ```
 
 ## ConEntail Environment
@@ -38,6 +42,9 @@ conda create -n entail2 python=3.6.9
 conda activate entail2
 pip install -r requirements.txt
 pip install -e .
+
+# generate the supervised pretraining dataset
+python entail2/dataloader/gym2entail_multitask.py 
 ```
 
 ## Run
@@ -61,6 +68,9 @@ python entail2/runner/runner.py \
 ```
 
 Evaluation
+
+
+For evaluation, you have to make sure you have downloaded individual datasets through crossfit or from huggingface datasets (and put the data in `raw_data/gym`). You don't have to download all the datasets. As long as you have a dataset of interest, you can modify the scripts below for a customized evaluation. 
 
 e.g., zero-shot evaluation, see [example](./scripts/eval_models_on_tasks_0shot.sh) for complete scripts, and you can use for-loop to run multiple models on multiple test sets.
 Few-shot evaluation: [here](./scripts/finetune_15_100_shot_bert.sh) and [here](./scripts/finetune_15_100_shot_bart.sh) 
@@ -86,6 +96,11 @@ Then, you'll need to run the model on each task:
     --mode test
 ```
 
+Other baselines:
+modify the ${MODEL} variable in scrips to
+```
+MODELS=(efl_no_cl entail2 crossfit unifew)
+```
 
 
 ## Citation
