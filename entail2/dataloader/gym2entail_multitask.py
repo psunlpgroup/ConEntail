@@ -151,6 +151,9 @@ class NLPFewshotGymMultiTaskData(object):
         # keep "sorted" so that things are consistent across machines
         for task in sorted(tasks):
             task_dir = os.path.join(self.data_path, task)
+            if not os.path.exists(task_dir):
+                print("Task directory %s does not exist, please try to download the dataset individually", task_dir)
+                continue
             files = sorted(os.listdir(task_dir))
             prefixes = []
             for filename in files:

@@ -1,6 +1,6 @@
 
 # ConEntail
-Source code for [ConEntail: An Entailment-based Framework for Universal Zero and Few Shot Classification with Supervised Contrastive Pretraining](https://arxiv.org/pdf/2210.07587.pdf)
+Source code for **EACL 2023 Paper** [ConEntail: An Entailment-based Framework for Universal Zero and Few Shot Classification with Supervised Contrastive Pretraining](https://arxiv.org/pdf/2210.07587.pdf)
 
 ## Supervised Pretraining Data
 
@@ -37,12 +37,16 @@ bash zero_para_download.sh
 
 ## ConEntail Environment
 
+Install the conda environment
 ```bash
 conda create -n entail2 python=3.6.9
 conda activate entail2
 pip install -r requirements.txt
 pip install -e .
+```
 
+This step is used to compose the individual datasets into a single dataset for supervised pretraining. You can skip this step if you download the preprocessed data. Be sure to use ```conda activate entail2``` before running the following command.
+```bash
 # generate the supervised pretraining dataset
 python entail2/dataloader/gym2entail_multitask.py 
 ```
@@ -105,10 +109,10 @@ MODELS=(efl_no_cl entail2 crossfit unifew)
 
 ## Citation
 ```bibtex
-@article{conentail,
+@article{zhang2023conentail,
       title={ConEntail: An Entailment-based Framework for Universal Zero and Few Shot Classification with Supervised Contrastive Pretraining}, 
-      author={Zhang, Haoran and Fan, Aysa Xuemo and Zhang, Rui},
-      journal={ArXiv},
+      author={Zhang, Ranran Haoran and Fan, Aysa Xuemo and Zhang, Rui},
+      booktitle={EACL 2023},
       year={2022},
 }
 ``` 
